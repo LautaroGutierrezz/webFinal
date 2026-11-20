@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+@font-face {
+    font-family: 'Simpson';
+    src: url('tipografias/simpson.ttf') format('truetype');
+}
+
+main {
+    background-color: rgb(34, 144, 185);
+
+}
+
+body {
+    background-image: url('img/fondoNubes.jpg');
+    font-family: 'Nunito', sans-serif;
+}
+
+h1 {
+    font-family: 'Simpson', sans-serif;
+    color: rgb(234, 182, 25);
+}
+
+h2 {
+    color: rgb(234, 182, 25);
+}
+
+.tabs {
+    font-family: 'Simpson', sans-serif;
+    color: rgb(234, 182, 25);
+}
+
+.mensaje {
+    background-color: rgb(4, 114, 157);
+    color: white;
+}
+
+
+.tarjeta {
+    background-color: rgb(4, 114, 157);
+}
+
+.colorBoton{
+    font-family: "Nunito";
+    background-color:rgb(234, 182, 25);
+    color: white;
+}
