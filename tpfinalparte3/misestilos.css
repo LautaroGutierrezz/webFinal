@@ -18,20 +18,21 @@ body {
 h1 {
     font-family: 'Simpson', sans-serif;
     color: rgb(234, 182, 25);
-}
-
-h2 {
-    color: rgb(234, 182, 25);
+    text-align: center;
 }
 
 .tabs {
+    background-color: rgb(3, 93, 129);
     font-family: 'Simpson', sans-serif;
+    height: 100px;
+    padding: 5px;
     color: rgb(234, 182, 25);
 }
 
 .mensaje {
     background-color: rgb(4, 114, 157);
     color: white;
+    margin-top: 30px;
 }
 
 
@@ -39,8 +40,76 @@ h2 {
     background-color: rgb(4, 114, 157);
 }
 
-.colorBoton{
+.colorBoton {
     font-family: "Nunito";
-    background-color:rgb(234, 182, 25);
-    color: white;
+    background-color: rgb(234, 182, 25);
+    color: rgb(255, 255, 255);
+}
+
+
+.encabezado {
+    background-color: rgb(4, 104, 144);
+    position: sticky;
+    /*se mueve junto con la pagina (queda pegado)*/
+    top: 0;
+    /* indica que al deslizar se va a quedar pegado en la parte superior */
+    z-index: 1000;
+    /*es el numero de capas, te aseguras que no se pise xon ningun otro elemento*/
+    padding: 10px;
+}
+
+footer {
+    background-color: rgba(4, 104, 144, 0.384);
+    color: rgb(255, 255, 255);
+    padding: 10px 10px;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#inicio {
+    scroll-margin-top: 290px;
+    /*margen que hay entre el encabezado y el inicio*/
+}
+
+html {
+    scroll-behavior: smooth;
+    /*se desliza gradualmente*/
+}
+
+
+
+/* Adaptacion movile */
+
+
+@media (max-width: 768px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    .tabs {
+        height: auto;
+        padding: 10px;
+        display: flex;
+        flex-direction: column; /*el tablero ahora se despliega hacia abajo*/
+        gap: 10px;
+        text-align: center;
+    }
+
+    .mensaje {
+        padding: 15px;
+    }
+
+    .tarjeta {
+        margin-bottom: 15px;
+    }
+
+    #inicio {
+        scroll-margin-top: 450px;
+    }
+
+    footer {
+        padding: 20px;
+    }
+
 }

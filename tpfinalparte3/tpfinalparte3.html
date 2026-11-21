@@ -1,3 +1,4 @@
+<!--  -->
 <!DOCTYPE html>
 <html lang="es">
 
@@ -13,24 +14,26 @@
     <title>Aventura Grafica</title>
 </head>
 
-<body class=>
+<body class="responsive ">
 
     <main class="responsive">
-        <div>
-            <div class="tabs">
-                <a class="active">Infografia</a>
+        <div class="encabezado"> <!-- titulo para volver al encabezado -->
+            <div>
+                <div >
+                    <h1><a href="#inicio">Aventura Grafica</a></h1> 
+                </div>
+            </div>
+            <!-- tablero de opciones -->
+            <div class="tabs scroll">
+                <a class="active">Información</a>
                 <a>Homero y la tentacion</a>
                 <a>Food and radiation</a>
             </div>
         </div>
         <header>
-            <h1 id="Inicio">Aventura Grafica</h1>
-
-        </header>
-
-        <section>
+            <!-- mensaje "aclaración" -->
             <article class="mensaje">
-                <h3>Aclaración</h3>
+                <h3 id="inicio">Aclaración</h3>
                 <p>
                     Esta web fue creada con el fin de mostrar los conocimientos adquiridos en la materia IPMIW a través
                     de distintos proyectos interactivos desarrollados durante el año. Entre los mismos se van a
@@ -43,42 +46,74 @@
 
 
             </article>
+        </header>
 
+
+        <section>
             <h2>Integrantes</h2>
 
-
-            <div class="grid">
-                <div class="m6">
-                    <article class="border round tarjeta">
-                        <img src="img/fondoNubes.jpg" class="responsive ">
-                        <div>
-                            <h5>Lautaro Gutierrez</h5>
-                            <p>Este es mi primer año de Diseño Multimedial y me anoté en la comisión 3 de David Bedoian,
-                                durante este segundo cuatrimestre de IPMIW desarolle los siguientes trabajos.</p>
-                            <nav>
-                                <button class="colorBoton">Trabajos</button>
-                            </nav>
-                        </div>
-                </div>
-                </article>
-                <div class="m6">
-                <article class="border round tarjeta ">
-                    <img src="img/fondoNubes.jpg" class="responsive">
-                    <div>
-                        <h5>Lautaro Gutierrez</h5>
-                        <p>Este es mi primer año de Diseño Multimedial y me anoté en la comisión 3 de David Bedoian,
-                            durante este segundo cuatrimestre de IPMIW desarolle los siguientes trabajos.</p>
-                        <nav>
-                            <button class="colorBoton">Trabajos</button>
-                        </nav>
+            <!-- tarjetas -->
+            <aside>
+                <div class="grid"> <!-- tarjeta1 -->
+                    <div class="m6 s12">
+                        <article class="border round tarjeta">
+                            <img src="img/FotoMia.png" class="responsive ">
+                            <div>
+                                <h5>Lautaro Gutierrez</h5>
+                                <p>Este es mi primer año de Diseño Multimedial y me anoté en la comisión 3 de David
+                                    Bedoian,
+                                    durante este segundo cuatrimestre de IPMIW desarolle los siguientes trabajos.</p>
+                            </div>
                     </div>
-                </article>
-            </div>
+                    </article>
+                    <div class="m6 s12"> <!-- tarjeta2 -->
+                        <article class="border round tarjeta ">
+                            <img src="img/fondoNubes.jpg" class="responsive">
+                            <div>
+                                <h5>Paulina Moretti</h5>
+                                <p></p>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                
+                <h2>Trabajos</h2>
+                <h5><strong>Lautaro Gutierrez</strong></h5> <!-- fotos trabajos Lautaro -->
+                <article class="border round tarjeta">
+                    <div class=" row scroll">
+                        <img class="large-width large-height" src="img/tp1 IPMI.png">
+                        <img class="large-width large-height" src="img/tp2 IPMI.png">
+                        <img class="large-width large-height" src="img/tp3 IPMI.png">
+                        <img class="large-width large-height" src="img/tp1 IPMIW.png">
+                        <img class="large-width large-height" src="img/tp2 IPMIW.png">
+                        <img class="large-width large-height" src="img/tp3 IPMIW.png">
 
+                    </div>
+                    <nav>
+                       <a href="https://github.com/LautaroGutierrezz?tab=repositories" target="_blank" rel="noopener noreferrer"><button class="colorBoton">Ver más en github</button></a> 
+                    </nav>
+                </article>
+
+                <h5><strong>Paulina Moretti</strong></h5> <!-- fotos trabajos Paulina -->
+                <article class="border round tarjeta">
+                    <div class=" row scroll">
+                        <img class="large-width large-height" src="img/fondoNubes.jpg">
+                        <img class="large-width large-height" src="img/fondoNubes.jpg">
+                        <img class="large-width large-height" src="img/fondoNubes.jpg">
+                        <img class="large-width large-height" src="img/fondoNubes.jpg">
+                        <img class="large-width large-height" src="img/fondoNubes.jpg">
+                        <img class="large-width large-height" src="img/fondoNubes.jpg">
+
+                    </div>
+                    <nav>
+                        <button class="colorBoton">Ver más en github</button>
+                    </nav>
+                </article>
+            </aside>
         </section>
         <footer>
-            <h6> Un trabajo compuesto por Lautaro Gutierrez el miercoles 16/09/2026 para la materia de; Programación
-                para medios interactivos orientada a las tecnologías web (IPMIW).</h6>
+            <h6> Este fue un trabajo producido para la materia IPMIW el 20/11/26 por Lautaro Gutierrez y Paulina Moretti
+            </h6>
         </footer>
     </main>
 </body>
